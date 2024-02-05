@@ -1,0 +1,67 @@
+:root {
+    --background: #F8F8FF;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    
+}
+body {
+    background-color: pink;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+.gallary {
+    display: flex;
+    gap: 1rem;
+    max-width: 80rem;
+}
+.card {
+    position: relative;
+    left: 0;
+    width: 10rem;
+    border-radius: 0;
+    height: 20rem;
+    overflow: hidden;
+    
+    
+    transition: 0.4s ease-in-out;
+    
+    flex: 0.25;
+
+
+}
+a {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-weight: 300;
+
+    
+
+}
+.card {
+    position: relative;
+    height: 20rem;
+    object-fit: cover;
+}
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.card:nth-child(1) img {
+    left: -8rem;
+}
+.card:nth-child(2) img {
+    left: -6rem;
+}
+.card:nth-child(3) img {
+    left: -8rem;
+}
